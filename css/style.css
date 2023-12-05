@@ -74,7 +74,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 300px;
-    background-image: url('img/ChristmasHero.jpg'); /* Corrected Path */
+    background-image: url('../img/ChristmasHero.jpg'); /* Corrected Path */
     background-size: cover;
 }
 
@@ -121,7 +121,7 @@ body {
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-    background-image: url('img/background_patterns_christmas.jpg'); /* Corrected Path */
+    background-image: url('../img/background_patterns_christmas.jpg'); /* Corrected Path */
     background-size: cover;
     box-shadow: 4px 3px 7px 1px rgba(190, 190, 190, 0.75);
 }
