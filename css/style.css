@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #a67c00;
+}
+
+.header__main-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    padding: 20px;
+    z-index: 100;
+    background-color: #ffffff;
+    transition: right 0.5s ease;
+}
+
+.nav__open {
+    font-size: 20px;
+}
+
+.nav__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: grid;
+    place-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.nav__items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.nav__item {
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #424242;
+}
+
+.nav__item:last-child {
+    margin-bottom: 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/ChristmasHero.jpg);
+    background-size: cover;
+}
+
+.hero__header {
+    align-self: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.hero__comenzar {
+    display: box;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #a67d00dc;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero__comenzar:hover {
+    background-color: rgb(197, 163, 59)
+}
+
+.main {
+
+}
+
+.main__header {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #a67c00;
+    text-align: center;
+}
+
+.main__body {
+
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    height: fit-content;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: url(/img/background_patterns_christmas.jpg);
+    background-size: cover;
+    box-shadow: 4px 3px 7px 1px rgba(190, 190, 190, 0.75);
+}
+
+.card__image {
+    display: block;
+    border-radius: 5px;
+}
+
+.card__header {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #a67c00;
+    text-align: center;
+}
+
+.card__description {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+    text-align: justify;
+}
+
+.card__subheader {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(221,93,94);
+}
+
+.card__list {
+    padding: 5px;
+    list-style:disc;
+}
+
+.card__list-item {
+    margin-left: 20px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+}
+
+.card__list-item:last-child {
+    margin-bottom: 0px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #a67c00;
+}
+
+.footer__item {
+    font-weight: bold;
+    color: #ffffff;
+}
